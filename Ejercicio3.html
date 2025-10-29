@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Formulario de registro — Ejercicio 3" />
+  <meta name="author" content="Tu Nombre" />
+  <title>Registro de usuario</title>
+</head>
+<body>
+  <div class="container">
+    <h1 style="margin:0 0 12px 0">Formulario de registros</h1>
+    <form id="registroForm" action="#" method="post" novalidate>
+      <fieldset>
+        <legend>Información personal</legend>
+
+
+        <div class="row">
+          <div>
+            <label for="nombre">Nombre <span aria-hidden="true" ></span></label>
+            <input id="nombre" name="nombre" type="text" required />
+          </div>
+
+
+          <div>
+            <label for="apellido">Apellido <span aria-hidden="true" ></span>
+            <input id="apellido" name="apellido" type="text" required />
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div>
+            <label for="fecha_nac">Fecha de nacimiento <span aria-hidden="true"  ></span>
+            <input id="fecha_nac" name="fecha_nac" type="date" required />
+          </div>
+
+
+          <div>
+            <label>Género <span aria-hidden="true" ></span>
+            <div aria-label="Género">
+              <label class="inline"><input type="radio" name="genero" id="gen_m" value="Masculino" required> <span>Masculino</span></label>
+              <label class="inline"><input type="radio" name="genero" id="gen_f" value="Femenino"> <span>Femenino</span></label>
+              <label class="inline"><input type="radio" name="genero" id="gen_o" value="Otro"> <span>Otro</span></label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Información de contacto</legend>
+
+
+        <label for="email">Correo electrónico <span aria-hidden="true" ></span>
+        <input id="email" name="email" type="email" required />
+
+
+        <label for="telefono">Número de teléfono <span aria-hidden="true" ></span>
+        <input id="telefono" name="telefono" type="tel" required pattern="[0-9+\s\-]{6,20}" placeholder="+34 600 000 000" />
+
+
+        <label for="direccion">Dirección</label>
+        <textarea id="direccion" name="direccion" rows="3"></textarea>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Información de cuenta</legend>
+
+
+        <label for="usuario">Nombre de usuario <span aria-hidden="true" ></span>
+        <input id="usuario" name="usuario" type="text" required minlength="3" />
+
+
+        <label for="password">Contraseña <span aria-hidden="true" ></span>
+        <input id="password" name="password" type="password" required minlength="6" aria-describedby="pwdHelp" />
+
+
+        <label for="password2">Confirmar contraseña <span aria-hidden="true" ></span>
+        <input id="password2" name="password2" type="password" required minlength="6" />
+
+
+        <div id="pwdError" class="error" role="alert">Las contraseñas no coinciden.</div>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Preferencias</legend>
+
+
+        <label for="color">Color favorito</label>
+        <select id="color" name="color">
+          <option value="">-- Seleccionar --</option>
+          <option value="Rojo">Rojo</option>
+          <option value="Azul">Azul</option>
+          <option value="Verde">Verde</option>
+          <option value="Amarillo">Amarillo</option>
+        </select>
+
+
+        <label style="margin-top:10px">
+          <input id="terminos" name="terminos" type="checkbox" required> Acepto los términos y condiciones <span aria-hidden="true" ></span>
+      </fieldset>
+
+
+      <div class="actions">
+        <button type="submit">Registrar</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
