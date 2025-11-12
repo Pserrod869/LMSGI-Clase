@@ -1,15 +1,24 @@
 .cta-container ¨{
-   background-image: url(https://spots.ag/2024/03/01/nissan-skyline-r34-gt-r-v-spec-ii-c680101032024184351_1.jpg?1709315065.jpg);
-    background-size : 100%;
+   background-image: url("https://img.freepik.com/vector-gratis/fondo-degradado-verde-moderno_343694-2071.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size : cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: 100vp;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .cta-text {
-    font-size: large;
+    font-size: 20px;
     font-weight: bold;
+    color: aliceblue;
+}
+
+.cta-button {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px, 30px;
+    font-size: 20px;
 }
