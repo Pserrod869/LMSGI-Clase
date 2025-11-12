@@ -1,0 +1,15 @@
+.cta-container ¨{
+   background-image: url(https://spots.ag/2024/03/01/nissan-skyline-r34-gt-r-v-spec-ii-c680101032024184351_1.jpg?1709315065.jpg);
+    background-size : 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cta-text {
+    font-size: large;
+    font-weight: bold;
+}
