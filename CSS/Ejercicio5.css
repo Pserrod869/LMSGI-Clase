@@ -27,3 +27,11 @@
     height: 400px;
     border-radius: 8px; 
 }
+
+#menu-section .menu-list .meno-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
